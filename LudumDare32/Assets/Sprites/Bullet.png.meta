@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 13e157b944fd1e640806a221dab4d718
-timeCreated: 1429377349
+timeCreated: 1429396999
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -14,6 +14,7 @@ TextureImporter:
     21300014: Bullet_7
     21300016: Bullet_8
     21300018: Bullet_9
+    21300020: Bullet_10
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -63,7 +64,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -73,7 +74,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -83,7 +84,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -93,7 +94,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -103,7 +104,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -113,7 +114,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -123,7 +124,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -133,17 +134,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bullet_8
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -153,11 +154,21 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bullet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
