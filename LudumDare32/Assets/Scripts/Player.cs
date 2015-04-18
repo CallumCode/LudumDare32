@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
     {
         Movement();
 
-      //  GravEffect();
+       GravEffect();
     }
 
     void OnCollisionEnter2D(Collision2D coll)
@@ -62,8 +62,7 @@ public class Player : MonoBehaviour
 
          if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("PlayerWalk"))
          {
-            Vector3 theScale = transform.localScale;
-
+ 
             if ( rigidbody2D.velocity.x > 0 && !facingRight)
             {
                 Flip();                 
@@ -77,7 +76,7 @@ public class Player : MonoBehaviour
 
         if (grounded.collider != null)
         {
-            Debug.Log(grounded.collider.name);
+         //   Debug.Log(grounded.collider.name);
 
             rigidbody2D.drag = groundDrag;
 
@@ -109,6 +108,7 @@ public class Player : MonoBehaviour
 
     void GravEffect()
     {
+       
 
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = - Camera.main.transform.position.z;
