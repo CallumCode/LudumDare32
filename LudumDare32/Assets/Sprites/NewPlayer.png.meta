@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a0f41d85cea7e554b807c4562dd7e03b
-timeCreated: 1429362978
+timeCreated: 1429382555
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,18 @@ TextureImporter:
     21300010: NewPlayer_5
     21300012: NewPlayer_6
     21300014: NewPlayer_7
+    21300016: NewPlayer_8
+    21300018: NewPlayer_9
+    21300020: NewPlayer_10
+    21300022: NewPlayer_11
+    21300024: NewPlayer_12
+    21300026: NewPlayer_13
+    21300028: NewPlayer_14
+    21300030: NewPlayer_15
+    21300032: NewPlayer_16
+    21300034: NewPlayer_17
+    21300036: NewPlayer_18
+    21300038: NewPlayer_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,7 +73,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -71,7 +83,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -81,7 +93,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -91,7 +103,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -100,8 +112,8 @@ TextureImporter:
     - name: NewPlayer_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -110,8 +122,8 @@ TextureImporter:
     - name: NewPlayer_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -120,8 +132,8 @@ TextureImporter:
     - name: NewPlayer_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -130,7 +142,127 @@ TextureImporter:
     - name: NewPlayer_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewPlayer_19
+      rect:
+        serializedVersion: 2
+        x: 96
         y: 0
         width: 32
         height: 32

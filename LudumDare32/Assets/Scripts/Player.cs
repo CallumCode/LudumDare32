@@ -60,9 +60,7 @@ public class Player : MonoBehaviour
 
         animator.SetFloat("Speed", rigidbody2D.velocity.magnitude);
 
-         if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("PlayerWalk"))
-         {
- 
+          
             if ( rigidbody2D.velocity.x > 0 && !facingRight)
             {
                 Flip();                 
@@ -71,8 +69,7 @@ public class Player : MonoBehaviour
             {
                 Flip();
             } 
-         }
-            
+      
 
         if (grounded.collider != null)
         {
