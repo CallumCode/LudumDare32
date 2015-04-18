@@ -20,7 +20,7 @@ public class Gun : MonoBehaviour
     public GameObject right;
     public GameObject left;
 
-    public float rotateSpeed = .75f;
+    public float rotateSpeed = .75f;    
 
     void Start()
     {
