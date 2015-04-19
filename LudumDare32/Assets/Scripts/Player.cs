@@ -13,8 +13,7 @@ public class Player : MonoBehaviour
 
     public LayerMask groundMask;
 
-    public GameObject crosshair;
-
+  
     public Animator animator;
 
     public Vector2 grav;
@@ -50,8 +49,6 @@ public class Player : MonoBehaviour
         if (coll.collider.CompareTag("Boundary"))
         {
             PlayerPrefs.SetInt("Deaths", PlayerPrefs.GetInt("Deaths") + 1);
-            PlayerPrefs.SetFloat("LastTotalTime", PlayerPrefs.GetFloat("LastTotalTime") + (int)Time.timeSinceLevelLoad);
-
             Application.LoadLevel(Application.loadedLevel);
         }
     }
@@ -111,8 +108,7 @@ public class Player : MonoBehaviour
        
 
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = - Camera.main.transform.position.z;
-        crosshair.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
+        mousePos.z = - Camera.main.transform.position.z; 
 
         float t =    ( (mousePos.x - (float)Screen.width / 2)) / ((float)Screen.width / 2);
         t = Mathf.Clamp(t, -1, 1);
