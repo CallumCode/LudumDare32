@@ -17,8 +17,7 @@ public class Score : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-    //    PlayerPrefs.DeleteAll();
-
+ 
         if (PlayerPrefs.GetInt("BestDeaths", int.MaxValue) != int.MaxValue)
         {
             BestDeaths.GetComponent<Text>().text = "Best Deaths: " + PlayerPrefs.GetInt("BestDeaths", int.MaxValue);

@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
 
     public LayerMask groundMask;
 
-  
     public Animator animator;
 
     public Vector2 grav;
@@ -42,14 +41,18 @@ public class Player : MonoBehaviour
         Movement();
 
        GravEffect();
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            Death();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.collider.CompareTag("Boundary"))
         {
-            PlayerPrefs.SetInt("Deaths", PlayerPrefs.GetInt("Deaths") + 1);
-            Application.LoadLevel(Application.loadedLevel);
+            Death();
         }
     }
     
@@ -133,5 +136,15 @@ public class Player : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+ 
+    }
+
+    void Death()
+    {
+
+        PlayerPrefs.SetInt("Deaths", PlayerPrefs.GetInt("Deaths") + 1);
+        PlayerPrefs.SetFloat("LastTotalTime", PlayerPrefs.GetFloat("LastTotalTime") + Time.timeSinceLevelLoad);
+
+        Application.LoadLevel(Application.loadedLevel);
     }
 }
