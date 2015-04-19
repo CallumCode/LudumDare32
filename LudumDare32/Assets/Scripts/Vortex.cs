@@ -28,7 +28,7 @@ public class Vortex : MonoBehaviour {
         {
             Vector3 dir = Vector3.Normalize(other.transform.position - transform.position);
 
-            float distance = Vector3.Distance(other.transform.position, transform.position);
+            float distance = Vector3.Distance(other.transform.position, transform.position);    
 
             rigid.AddForce(dir  * (radius-distance ) / radius * maxForce);
         }

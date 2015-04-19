@@ -17,8 +17,7 @@ public class Gun : MonoBehaviour
 
     public float bulletForce = 100;
 
-    public GameObject right;
-    public GameObject left;
+ 
 
     public float rotateSpeed = .75f;    
 
