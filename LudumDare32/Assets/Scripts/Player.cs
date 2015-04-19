@@ -50,6 +50,8 @@ public class Player : MonoBehaviour
         if (coll.collider.CompareTag("Boundary"))
         {
             PlayerPrefs.SetInt("Deaths", PlayerPrefs.GetInt("Deaths") + 1);
+            PlayerPrefs.SetFloat("LastTotalTime", PlayerPrefs.GetFloat("LastTotalTime") + (int)Time.timeSinceLevelLoad);
+
             Application.LoadLevel(Application.loadedLevel);
         }
     }

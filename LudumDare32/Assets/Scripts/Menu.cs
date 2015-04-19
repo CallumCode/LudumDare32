@@ -6,13 +6,14 @@ public class Menu : MonoBehaviour
 
     public GameObject winText;
 
-
+    public Animator score;
     // Use this for initialization
     void Start()
     {
         if (PlayerPrefs.GetInt("Win") > 0)
         {
             winText.SetActive(true);
+            score.SetTrigger("ShowHide");
         }
         else
         {
@@ -37,6 +38,7 @@ public class Menu : MonoBehaviour
     public void StartGame()
     {
         PlayerPrefs.SetInt("Deaths", 0);
+        PlayerPrefs.SetFloat("LastTotalTime", 0);
 
         PlayerPrefs.SetInt("Win", 0);
         Application.LoadLevel("Main");

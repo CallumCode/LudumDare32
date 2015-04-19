@@ -6,11 +6,14 @@ public class Bullet : MonoBehaviour
 
     Rigidbody2D rigidBody2D;
     Animator animator;
+
+    public float time = 15;
     // Use this for initialization
     void Start()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        Invoke("DestroySelf", time);
     }
 
     // Update is called once per frame
@@ -27,4 +30,10 @@ public class Bullet : MonoBehaviour
     {
         animator.SetFloat("Speed", speed);
     }
+
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
+
 }
