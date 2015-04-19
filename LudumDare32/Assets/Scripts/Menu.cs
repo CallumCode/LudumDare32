@@ -4,12 +4,23 @@ using System.Collections;
 public class Menu : MonoBehaviour
 {
 
- 
-  public  Animator animator;
-     // Use this for initialization
+    public GameObject winText;
+
+
+    // Use this for initialization
     void Start()
     {
-     }
+        if (PlayerPrefs.GetInt("Win") > 0)
+        {
+            winText.SetActive(true);
+        }
+        else
+        {
+            winText.SetActive(false);
+        }
+
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -20,14 +31,18 @@ public class Menu : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            animator.SetTrigger("ShowHide");
-        }
+
     }
 
-    void StartGame()
+    public void StartGame()
     {
-         Application.LoadLevel("Main");
+        PlayerPrefs.SetInt("Deaths", 0);
+
+        PlayerPrefs.SetInt("Win", 0);
+        Application.LoadLevel("Main");
     }
+
+
+
+
 }

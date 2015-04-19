@@ -16,9 +16,6 @@ public class Gun : MonoBehaviour
     float timer = 0;
 
     public float bulletForce = 100;
-
- 
-
     public float rotateSpeed = .75f;    
 
     void Start()
@@ -34,7 +31,6 @@ public class Gun : MonoBehaviour
 
     void Fire()
     {
-
         Vector3 dir = bulletSpawn.transform.position - transform.position;
 
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.transform.position, bulletPrefab.transform.rotation) as GameObject;

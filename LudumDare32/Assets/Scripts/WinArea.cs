@@ -4,8 +4,10 @@ using System.Collections;
 public class WinArea : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 	
+
 	}
 	
 	// Update is called once per frame
@@ -17,7 +19,10 @@ public class WinArea : MonoBehaviour {
     {
         if ( coll.collider.CompareTag("Player"))
         {
-             Application.LoadLevel(1);
+
+            PlayerPrefs.SetInt("Win", 1);
+                
+             Application.LoadLevel("Start");
             
         }
     }
