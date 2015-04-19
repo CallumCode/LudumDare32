@@ -1,22 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Menu : MonoBehaviour {
+public class Menu : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start ()
+ 
+  public  Animator animator;
+     // Use this for initialization
+    void Start()
     {
-        Invoke("Reload", 1  );
-	}
-	
-	// Update is called once per frame
-	void Update () 
-    {
-	
-	}
+     }
 
-    void Reload()
+    // Update is called once per frame
+    void Update()
     {
-        Application.LoadLevel("Main");
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartGame();
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            animator.SetTrigger("ShowHide");
+        }
+    }
+
+    void StartGame()
+    {
+         Application.LoadLevel("Main");
     }
 }
